@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "CFTSimplePuzzle.h"
 
 @interface PuzzleBuilderTests : XCTestCase
 
@@ -27,7 +28,12 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    NSBundle *bundle = [NSBundle bundleForClass: [self class]];
+    NSString *filePath = [bundle pathForResource: @"PowerShanty"
+                                          ofType: @"jpg"];
+    CFTSimplePuzzle *simplePuzzle = [[CFTSimplePuzzle alloc] initWithNumberOfPieces: 16
+                                                                       forImagePath: filePath];
+    XCTAssert([simplePuzzle generatePuzzleWithName: @"Puzzle"], @"Pass");
 }
 
 - (void)testPerformanceExample {

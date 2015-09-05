@@ -10,6 +10,12 @@
 		D938C3521B9260A100410EC1 /* PuzzleBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D938C3511B9260A100410EC1 /* PuzzleBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D938C3581B9260A100410EC1 /* PuzzleBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938C34C1B9260A100410EC1 /* PuzzleBuilder.framework */; };
 		D938C35F1B9260A100410EC1 /* PuzzleBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D938C35E1B9260A100410EC1 /* PuzzleBuilderTests.m */; };
+		D938C36A1B926AF800410EC1 /* CFTSimplePuzzle.h in Headers */ = {isa = PBXBuildFile; fileRef = D938C3681B926AF800410EC1 /* CFTSimplePuzzle.h */; };
+		D938C36B1B926AF800410EC1 /* CFTSimplePuzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D938C3691B926AF800410EC1 /* CFTSimplePuzzle.m */; };
+		D938C36F1B92711700410EC1 /* PowerShanty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D938C36E1B92711700410EC1 /* PowerShanty.jpg */; };
+		D938C3711B9273EB00410EC1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938C3701B9273EB00410EC1 /* CoreFoundation.framework */; };
+		D938C3731B92746A00410EC1 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938C3721B92746A00410EC1 /* CoreImage.framework */; };
+		D98C364B1B9B9BCF0092DEEE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98C364A1B9B9BCF0092DEEE /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		D938C3571B9260A100410EC1 /* PuzzleBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D938C35D1B9260A100410EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D938C35E1B9260A100410EC1 /* PuzzleBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzleBuilderTests.m; sourceTree = "<group>"; };
+		D938C3681B926AF800410EC1 /* CFTSimplePuzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTSimplePuzzle.h; sourceTree = "<group>"; };
+		D938C3691B926AF800410EC1 /* CFTSimplePuzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFTSimplePuzzle.m; sourceTree = "<group>"; };
+		D938C36E1B92711700410EC1 /* PowerShanty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PowerShanty.jpg; sourceTree = "<group>"; };
+		D938C3701B9273EB00410EC1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D938C3721B92746A00410EC1 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D98C364A1B9B9BCF0092DEEE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98C364B1B9B9BCF0092DEEE /* MobileCoreServices.framework in Frameworks */,
+				D938C3731B92746A00410EC1 /* CoreImage.framework in Frameworks */,
+				D938C3711B9273EB00410EC1 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +68,9 @@
 		D938C3421B9260A000410EC1 = {
 			isa = PBXGroup;
 			children = (
+				D98C364A1B9B9BCF0092DEEE /* MobileCoreServices.framework */,
+				D938C3721B92746A00410EC1 /* CoreImage.framework */,
+				D938C3701B9273EB00410EC1 /* CoreFoundation.framework */,
 				D938C34E1B9260A100410EC1 /* PuzzleBuilder */,
 				D938C35B1B9260A100410EC1 /* PuzzleBuilderTests */,
 				D938C34D1B9260A100410EC1 /* Products */,
@@ -71,6 +89,7 @@
 		D938C34E1B9260A100410EC1 /* PuzzleBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				D938C36C1B926B0900410EC1 /* Classes */,
 				D938C3511B9260A100410EC1 /* PuzzleBuilder.h */,
 				D938C34F1B9260A100410EC1 /* Supporting Files */,
 			);
@@ -88,6 +107,7 @@
 		D938C35B1B9260A100410EC1 /* PuzzleBuilderTests */ = {
 			isa = PBXGroup;
 			children = (
+				D938C36D1B92707700410EC1 /* Test Images */,
 				D938C35E1B9260A100410EC1 /* PuzzleBuilderTests.m */,
 				D938C35C1B9260A100410EC1 /* Supporting Files */,
 			);
@@ -102,6 +122,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D938C36C1B926B0900410EC1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D938C3681B926AF800410EC1 /* CFTSimplePuzzle.h */,
+				D938C3691B926AF800410EC1 /* CFTSimplePuzzle.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D938C36D1B92707700410EC1 /* Test Images */ = {
+			isa = PBXGroup;
+			children = (
+				D938C36E1B92711700410EC1 /* PowerShanty.jpg */,
+			);
+			name = "Test Images";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,6 +146,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D938C36A1B926AF800410EC1 /* CFTSimplePuzzle.h in Headers */,
 				D938C3521B9260A100410EC1 /* PuzzleBuilder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D938C36F1B92711700410EC1 /* PowerShanty.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D938C36B1B926AF800410EC1 /* CFTSimplePuzzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +362,7 @@
 		D938C3631B9260A100410EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -337,6 +378,7 @@
 		D938C3641B9260A100410EC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -398,6 +440,7 @@
 				D938C3641B9260A100410EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D938C3651B9260A100410EC1 /* Build configuration list for PBXNativeTarget "PuzzleBuilderTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +449,7 @@
 				D938C3671B9260A100410EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
